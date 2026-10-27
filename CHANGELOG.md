@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Updated the README to reflect the owner's successful Windows test reported on 2026-10-27.
 - Added a portfolio-focused README, architecture notes, and contribution instructions.
 - Added CI for Windows and Linux on Python 3.10 and 3.13.
 - Added native Windows structure and Tkinter initialization checks without generating mouse input.

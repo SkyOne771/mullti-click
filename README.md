@@ -75,7 +75,9 @@ The hook thread forwards physical clicks and hotkeys to the UI through a queue. 
 
 ### Manual Windows verification
 
-Actual mouse delivery into another application still needs a manual check on Windows:
+The project owner tested the app on Windows and confirmed that it works (2026-10-27). The Windows version, target applications, and individual test cases were not recorded.
+
+Use this checklist when verifying future changes:
 
 1. Open a disposable click counter, enable 5×, and confirm one physical click produces five total events. Repeat at 10×.
 2. At 100× with a long interval, press F8 partway through and confirm counting stops.
@@ -84,6 +86,6 @@ Actual mouse delivery into another application still needs a manual check on Win
 
 ## Project notes
 
-This project demonstrates Python desktop development, Win32 API integration through `ctypes`, concurrency, event-driven design, and automated testing. End-to-end input behavior has not yet been manually verified on Windows; the automated checks and their limits are described above.
+This project demonstrates Python desktop development, Win32 API integration through `ctypes`, concurrency, event-driven design, and automated testing. The project owner has confirmed successful operation on Windows; automated checks and the manual regression checklist are described above.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and [CHANGELOG.md](CHANGELOG.md) for changes.
